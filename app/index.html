@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #909090;
+    height: 100%;  /*Full height */
+    position: fixed;  /*Make it stick, even on scroll */
+    overflow: auto;  /*Enable scrolling if the sidenav has too much content*/ 
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+form {
+     padding-left: 220px;
+}
+
+input[type=text],input[type=number]{
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 25px;
+    display: inline-block;
+    border: 1px solid red;
+    border-radius: 4px;
+    /*box-sizing:border-box;*/
+}
+
+#a,input[type=button]{
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#a:hover {
+    background-color: #440a29;
+}
+
+input[type=button]:hover {
+    background-color: #440a29;
+}
+
+body {
+     background-color:#f0f0f0;
+}
+
+/*h3 {
+     padding-left: 250px;
+}*/
+</style>
+ <!link rel="stylesheet" type="text/css" href="/home/ambika/Desktop/ui.css">
+
+<TITLE> STUDENT RECORD </TITLE>
+</HEAD>
+
+<body>
+<script src="js/app.js">
+</script>
+
+<H2 align="center">STUDENT DETAILS</H2>
+<!This is Menu>
+<ul>
+  <li><a href="">Home</a></li>
+  <li><a href="/home/kanaad/newDapp/app/results.html">Results</a></li>
+</ul>
+
+<!This is the form>
+<form id="form_txt">
+  <label for="name">Name</label>
+  <br>
+  <input type="text" id="name_txt" name="name" placeholder="Your Name"><br>
+  <label for="usn">USN</label>
+  <br>
+  <input type="text" id="usn_txt" name="usn" placeholder="Your USN">
+  <br>
+  <label for="marks">Total IA Marks</label>
+  <br>
+  <input type="number" id="marks_txt" name="marks" min="0" max="150">
+  <br><br>
+  <a href="" id="a" onClick="WritetoFile()">Submit</a>
+  
+  <input type="button" value="Upload" id="upload_txt">
+</form>
+  <!div id="alert"><!/div>
+</h3>
+</body>
+</HTML>
+
